@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_find_friends_option" type="id" />
+    <item name="main_create_group_option" type="id" />
+</resources>
