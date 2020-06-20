@@ -1,9 +1,15 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
+
+    sourceSets{
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 
     defaultConfig {
         applicationId "com.example.myapplication"
@@ -38,9 +44,16 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:20.2.0'
     implementation 'com.google.firebase:firebase-storage:19.1.1'
     implementation 'com.firebaseui:firebase-ui-database:4.1.0'
-    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     testImplementation 'junit:junit:4.12'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+
+
+}
+repositories {
+    mavenCentral()
 }

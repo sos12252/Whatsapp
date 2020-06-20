@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/set_profile_image"
         android:inputType="textMultiLine"
-        android:hint="username"
+        android:hint="@string/username"
         android:textAlignment="center"
         android:drawableStart="@drawable/edit_profile"
         android:textColor="@color/colorPrimaryDark"
